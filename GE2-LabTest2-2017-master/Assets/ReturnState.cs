@@ -17,6 +17,7 @@ public class ReturnState : State {
         Debug.Log("Entered Return State");
         hive = GameObject.Find("Hive");
         hivePos = hive.transform.position;
+        hivePos = new Vector3(hivePos.x, parent.transform.position.y, hivePos.z);
         parent.GetComponent<Bee>().seekpos = hivePos;
         parent.GetComponent<Bee>().arriveEnabled = true;
     }

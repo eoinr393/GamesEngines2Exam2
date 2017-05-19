@@ -7,7 +7,7 @@ public class Bee : MonoBehaviour {
 
     float maxspeed = 10.0f;
     Vector3 velocity;
-    float slowRad = 5.0f;
+    float slowRad = 10.0f;
     float deceleration = 5.0f;
     Vector3 acceleration;
     Rigidbody rb;
